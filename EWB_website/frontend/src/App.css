@@ -15,8 +15,36 @@
   justify-content: center;
 }
 
+.canadianFlag {
+  position: absolute;
+  width: 50vh;
+  height: 25vh;
+  left: 5%;
+  top: 5%;
+}
+
+.canadianFlag2 {
+  position: absolute;
+  width: 50vh;
+  height: 25vh;
+  right: 5%;
+  top: 5%;
+}
+
 .text__header {
   font-size: 3vh;
   margin: 3rem;
   color: black;
+  position: absolute;
+
+  bottom: 10%;
+
+  font-family: Annie Use Your Telescope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 115px;
+  text-align: center;
+
+  color: #FFFFFF;
 }
