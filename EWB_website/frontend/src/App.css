@@ -20,4 +20,18 @@
   margin: 3rem;
   color: black;
 }
+.img_header10{
+  position: absolute;
+width: 1061px;
+height: 572px;
+left: calc(50% - 1061px/2 - 0.5px);
+bottom: 474px;
+
+background: url(maxresdefault.png);
+border: 5px dashed #000000;
+box-sizing: border-box;
+backdrop-filter: blur(4px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 100px;
+}
 
