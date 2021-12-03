@@ -1,6 +1,10 @@
 import './App.css';
 
 function App() {
+  // Write js functions here
+  
+
+  // The return statement will mainly comprise of HTML
   return (
     <div className="App">
       <div className="app__body">
