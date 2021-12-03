@@ -11,6 +11,7 @@ function App() {
         <p className = "text__header">
           Hello World! 
         </p>
+        <img src="C:\Users\nj09\OneDrive - The University of Western Ontario\Documents\UWO Year 2\EWB-PA\canada.png" alt="canadian flag">
         <p className = "text__header">This is made for EWB</p>
         <p className = "text__header">Tristan Jin was here</p>
         <p className = "text__header">More text here</p>
