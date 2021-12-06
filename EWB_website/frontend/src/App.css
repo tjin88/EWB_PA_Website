@@ -15,20 +15,28 @@
   justify-content: center;
 }
 
-.canadianFlag {
+.canadianFlagRight {
   position: absolute;
-  width: 50vh;
-  height: 25vh;
+  width: 30vh;
+  /* height: 10vh; */
   left: 5%;
   top: 5%;
 }
 
-.canadianFlag2 {
+.canadianFlagLeft {
   position: absolute;
-  width: 50vh;
-  height: 25vh;
+  width: 30vh;
+  /* height: 10vh; */
   right: 5%;
   top: 5%;
+}
+
+.parties {
+  position: absolute;
+  width: 100vh;
+  height: 50vh;
+  top: 0%;
+  left: 25%;
 }
 
 .text__header {
@@ -37,7 +45,7 @@
   color: black;
   position: absolute;
 
-  bottom: 10%;
+  bottom: 20%;
 
   font-family: Annie Use Your Telescope;
   font-style: normal;
@@ -48,3 +56,20 @@
 
   color: #FFFFFF;
 }
+
+.startButton {
+  position: absolute;
+  bottom: 10%;
+  width: 20vh;
+  height: 10vh;
+
+  background-color: whitesmoke;
+  border-width: 0.5rem;
+  border-color: grey;
+}
+
+.startButton:hover {
+  background-color: pink;
+  border-color: white;
+}
+

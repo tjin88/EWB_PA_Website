@@ -1,5 +1,6 @@
 import './App.css';
 import canadianFlag from './images/canada.png';
+import parties from './images/parties.png';
 
 function App() {
   // Write js functions here
@@ -9,10 +10,15 @@ function App() {
   return (
     <div className="App">
       <div className="app__body">
-      <img className = "canadianFlag" src={canadianFlag} alt = "Canadian Parties"/>
-      <img className = "canadianFlag2" src={canadianFlag} alt = "Canadian Parties"/>
+      <img className = "canadianFlagRight" src = {canadianFlag} alt = "Canadian Flag"/>
 
-      <p className = "text__header">EWB Canadian Party Alignment</p>
+      <img className = "parties" src = {parties} alt = "Canadian Parties"/>
+
+      <img className = "canadianFlagLeft" src = {canadianFlag} alt = "Canadian Flag"/>
+
+      <p className = "text__header">EWB Canadian Party Alignment Quiz</p>
+
+      <button className = "startButton"> Click here to Start </button>
       </div>
     </div>
   );
