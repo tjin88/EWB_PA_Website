@@ -15,23 +15,61 @@
   justify-content: center;
 }
 
+.canadianFlagRight {
+  position: absolute;
+  width: 30vh;
+  /* height: 10vh; */
+  left: 5%;
+  top: 5%;
+}
+
+.canadianFlagLeft {
+  position: absolute;
+  width: 30vh;
+  /* height: 10vh; */
+  right: 5%;
+  top: 5%;
+}
+
+.parties {
+  position: absolute;
+  width: 100vh;
+  height: 50vh;
+  top: 0%;
+  left: 25%;
+}
+
 .text__header {
   font-size: 3vh;
   margin: 3rem;
   color: black;
-}
-.img_header10{
   position: absolute;
-width: 1061px;
-height: 572px;
-left: calc(50% - 1061px/2 - 0.5px);
-bottom: 474px;
 
-background: url(maxresdefault.png);
-border: 5px dashed #000000;
-box-sizing: border-box;
-backdrop-filter: blur(4px);
-/* Note: backdrop-filter has minimal browser support */
-border-radius: 100px;
+  bottom: 20%;
+
+  font-family: Annie Use Your Telescope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 115px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.startButton {
+  position: absolute;
+  bottom: 10%;
+  width: 20vh;
+  height: 10vh;
+
+  background-color: whitesmoke;
+  border-width: 0.5rem;
+  border-color: grey;
+}
+
+.startButton:hover {
+  background-color: pink;
+  border-color: white;
 }
 

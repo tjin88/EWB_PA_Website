@@ -1,5 +1,7 @@
 import './App.css';
-import img from './images/maxresdefault.png';
+import canadianFlag from './images/canada.png';
+import parties from './images/parties.png';
+
 function App() {
   // Write js functions here
   
@@ -7,11 +9,16 @@ function App() {
   // The return statement will mainly comprise of HTML
   return (
     <div className="App">
-      <img src="https://lh3.googleusercontent.com/proxy/7s2oXXa75NhmRF3gFhesWpmuk1f1maTp2bLwMGUlC093WOC2o12-II_BAGSbNQjG4tPbc6dAOSISDjORRRrvhNdsnEPyEwTCtG_bVyPX0GMdQniVEytmAWweuHh2EYJZPpFe" alt="canadian flag"/>
-      <img src= {img} alt = "partyimages"/>
       <div className="app__body">
-        <p className = "text__header">
-        </p>
+      <img className = "canadianFlagRight" src = {canadianFlag} alt = "Canadian Flag"/>
+
+      <img className = "parties" src = {parties} alt = "Canadian Parties"/>
+
+      <img className = "canadianFlagLeft" src = {canadianFlag} alt = "Canadian Flag"/>
+
+      <p className = "text__header">EWB Canadian Party Alignment Quiz</p>
+
+      <button className = "startButton"> Click here to Start </button>
       </div>
     </div>
   );
