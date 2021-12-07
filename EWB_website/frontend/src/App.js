@@ -1,6 +1,7 @@
 import './App.css';
 import canadianFlag from './images/canada.png';
 import parties from './images/parties.png';
+import parties2 from './images/parties2.png';
 
 function App() {
   // Write js functions here
@@ -13,6 +14,8 @@ function App() {
       <img className = "canadianFlagRight" src = {canadianFlag} alt = "Canadian Flag"/>
 
       <img className = "parties" src = {parties} alt = "Canadian Parties"/>
+      {/* <div class="rectangle"></div>
+      <img className = "parties2" src = {parties2} alt = "Canadian Parties"/> */}
 
       <img className = "canadianFlagLeft" src = {canadianFlag} alt = "Canadian Flag"/>
 
