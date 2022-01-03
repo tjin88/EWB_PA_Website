@@ -1,28 +1,22 @@
+import React from 'react';
 import './App.css';
-import canadianFlag from './images/canada.png';
-import parties from './images/parties.png';
-import parties2 from './images/parties2.png';
+import HomePage from './pages/HomePage';
+import test from './pages/test';
 
-function App() {
+function App () {
   // Write js functions here
-  
+  // const changePage = () => {
+  //   return (
+  //     <test/>
+  //   );
+  // }
 
   // The return statement will mainly comprise of HTML
   return (
     <div className="App">
-      <div className="app__body">
-      <img className = "canadianFlagRight" src = {canadianFlag} alt = "Canadian Flag"/>
-
-      <img className = "parties" src = {parties} alt = "Canadian Parties"/>
-      {/* <div class="rectangle"></div>
-      <img className = "parties2" src = {parties2} alt = "Canadian Parties"/> */}
-
-      <img className = "canadianFlagLeft" src = {canadianFlag} alt = "Canadian Flag"/>
-
-      <p className = "text__header">EWB Canadian Party Alignment Quiz</p>
-
-      <button className = "startButton"> Click here to Start </button>
-      </div>
+      {/* <h1>HECK YEAH LET'S DO THIS</h1> */}
+      {/* <Component {...pageProps}/> */}
+      <HomePage/>
     </div>
   );
 }

@@ -2,11 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import HomePage from './pages/HomePage';
+import QuestionPage from './pages/QuestionPage';
+import Test from './pages/test';
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  // <React.StrictMode>
+  //   <App/>
+  // </React.StrictMode>,
+  <Router>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/QuestionPage" element={<QuestionPage />} />
+      <Route path="/test" element={<Test />} />
+    </Routes>
+    {/* <Footer /> */}
+  </Router>,
   document.getElementById('root')
 );
 

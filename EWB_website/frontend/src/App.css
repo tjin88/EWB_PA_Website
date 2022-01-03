@@ -87,9 +87,9 @@
   border-radius: 1.5rem;
 }
 
-.startButton:hover {
+/* .startButton:hover {
   background-color: whitesmoke;
-  /* border-color: rgb(83, 83, 83); */
-  border: 0.5rem solid rgb(83, 83, 83);
-}
+  /* border-color: rgb(83, 83, 83); ****|
+  border: 0.5rem solid grey;
+} */
 
