@@ -1,8 +1,19 @@
+import React, { useState, useEffect } from 'react';
 import './QuestionPage.css';
+
+var Questions = ["Q1","Q2","Q3","Q4"]
+var Answers = []
 
 function QuestionPage() {
   // Write js functions here
-  
+  const [count, setCount] = useState(0);
+
+  // Similar to componentDidMount and componentDidUpdate:
+  useEffect(() => {
+    // Update the document title using the browser API
+    document.title = `You clicked ${count} times`;
+  });
+
 
   // The return statement will mainly comprise of HTML
   return (
@@ -10,11 +21,11 @@ function QuestionPage() {
       <div className="QuestionPage__body">
           {/* <h1>WORKING??????</h1> */}
           <h1 className="rectangle">
-              Question 4: Pineapple does NOT belong on pizza
+              {Questions[count]}
           </h1>
           <ul className="list">
-              <li className="listItem"> 
-                  <p className="listItemText">Option 1: Strongly Agree</p>
+              <li> 
+                  <button onClick={() => setCount(count + 1)} className="listItem">Option 1: Strongly Agree</button>
               </li>
               <li className="listItem">
                   <p>Option 2: Agree</p>
