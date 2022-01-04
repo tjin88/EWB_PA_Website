@@ -8,6 +8,7 @@ function ResultsPage() {
     return (
       <div className="ResultsPage">
         <div className="ResultsPage__body">
+            <p className="rectangle"></p>
            
         </div>
       </div>
