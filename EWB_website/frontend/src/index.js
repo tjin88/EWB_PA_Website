@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from './pages/HomePage';
 import QuestionPage from './pages/QuestionPage';
 import Test from './pages/test';
+import ResultsPage from './pages/ResultsPage';
 
 
 ReactDOM.render(
@@ -16,6 +17,8 @@ ReactDOM.render(
       <Route path="/" element={<HomePage />} />
       <Route path="/QuestionPage" element={<QuestionPage />} />
       <Route path="/test" element={<Test />} />
+      <Route path="/ResultsPage" element={<ResultsPage />} />
+      
     </Routes>
     {/* <Footer /> */}
   </Router>,

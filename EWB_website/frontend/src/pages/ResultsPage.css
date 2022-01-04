@@ -10,4 +10,16 @@
     justify-content: center;
   }
 
+  .rectangle {
+    position: absolute;
+    width: 80%;
+    height: 15vh;
+    top: 5%;
+    left: 10%;
+  }
+
+
+
+
+
   
