@@ -25,12 +25,21 @@
     margin: auto;
   }
 
-  .list {
-      position: absolute;
-      top: 30%;
-      text-align: center;
-      list-style-type: none;
-      padding: 0%;
+  ul {
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    list-style-position: inside; 
+    padding-left: 0;
+    padding: 0;
+    list-style-type: none;
+  }​
+
+  li {
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    padding: 0;
   }
 
   .listItem {
@@ -41,6 +50,7 @@
     top: 5%;
     left: 10%;
     margin: 5%;
+    margin-left: 0;
   
     background: white;
     border: 5px solid white;
@@ -54,45 +64,3 @@
     background-color: rgb(175, 167, 167);
     border: 5px solid rgb(175, 167, 167);
   }
-
-  .listItemText {
-    /* top: 50%; */
-    /* margin: 0; */
-    /* position: absolute; */
-  }
-  
-  /* .text__header {
-    font-size: 10vh;
-    margin: 3rem;
-    color: black;
-    position: absolute;
-  
-    bottom: 20%;
-  
-    font-family: Annie Use Your Telescope;
-    text-align: center;
-  
-    color: #FFFFFF;
-  }
-  
-  .startButton {
-    position: absolute;
-    bottom: 10%;
-    width: 20vh;
-    height: 10vh;
-  
-    background-color: whitesmoke;
-    border-width: 0.5rem;
-    border-color: grey;
-    border: 0.5rem solid grey;
-  
-    border-radius: 1.5rem;
-  } */
-  
-  /* .startButton:hover {
-    background-color: whitesmoke;
-    /* border-color: rgb(83, 83, 83); ****|
-    border: 0.5rem solid grey;
-  } */
-  
-  
