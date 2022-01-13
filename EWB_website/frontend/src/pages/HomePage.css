@@ -13,27 +13,83 @@
   .canadianFlagLeft {
     position: absolute;
     /* width: 30vh; */
-    height: 15vh;
-    left: 5%;
+    height: 17vh;
+    left: 2.5%;
     top: 5%;
   }
   
   .canadianFlagRight {
     position: absolute;
     /* width: 30vh; */
-    height: 15vh;
-    right: 5%;
+    height: 17vh;
+    right: 2.5%;
     top: 5%;
   }
+
+  .BLOC{
+    position: absolute;
+    width: 200px;
+    height: 15vh;
+    top: 5%;
+    left: 43%;
+    }
   
-  .parties {
+
+  .PPC{
+    position: absolute;
+    width: 200px;
+    height: 15vh;
+    right: 25%;
+    top: 5%;
+
+    }
+
+    .GREEN{
+      position: absolute;
+      width: 200px;
+      height: 15vh;
+      left: 25%;
+      top: 5%;
+    }
+
+    .CONS{
+      position: absolute;
+    width: 200px;
+    height: 15vh;
+    right: 25%;
+    top: 25%;
+    }
+
+    .LIB{
+      position: absolute;
+    width: 200px;
+    height: 15vh;
+    top: 25%;
+    left: 43%;
+
+    }
+
+    .NDP{
+      position: absolute;
+      width: 200px;
+      height: 15vh;
+      left: 25%;
+      top: 25%;
+    }
+
+
+
+/*
+   .parties { 
     position: absolute;
     width: 100vh;
     height: 50vh;
     top: 0%;
     left: 25%;
   }
+  */
   
+  /*
   .parties2 {
     position: absolute;
     width: 100vh;
@@ -45,6 +101,8 @@
     border-color: black;
     border-width: 300rem;
   }
+  */
+  
   
   .rectangle {
     position: absolute;

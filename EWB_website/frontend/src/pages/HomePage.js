@@ -1,26 +1,55 @@
 import React from 'react';
 import './HomePage.css';
 import canadianFlag from '../images/canada.png';
-import parties from '../images/parties.png';
-// import parties2 from '../images/parties2.png';
+// import parties from '../images/parties.png';
+import PPC from '../images/ppc.png';
+import NDP from '../images/NDP.png';
+import LIB from '../images/lib.png';
+import GREEN from '../images/green.png';
+import CONS from '../images/Cons.png';
+import BLOC from '../images/bloc.png';
+
 
 function HomePage() {
-  const url = "https://www.google.com/search?gs_ssp=eJzj4tFP1zcsNM2qMKkwSTZg9BLMSK1UKMlILUpVSEnNycxJzAAArRcK1Q&q=hey+there+delilah&rlz=1C5CHFA_enCA709CA710&oq=hey+&aqs=chrome.1.69i57j46i433i512l3j0i512j46i175i199i512j46i433i512j0i433i512j0i512j0i271.2885j0j7&sourceid=chrome&ie=UTF-8";
-
   // The return statement will mainly comprise of HTML
   return (
     <div className="HomePage">
       <div className="HomePage__body">
-      <img className = "canadianFlagRight" src = {canadianFlag} alt = "Canadian Flag"/>
+        <a href = "https://www.canada.ca/home.html" target="-blank">
+        <img className = "canadianFlagRight" src = {canadianFlag} alt = "Canadian Flag"/>
+        </a>
+     
       
-      <a id="hdimg" href={url} target="-blank">
-            {/* <img id="image_of_the_day" src="${innerData.url}" alt="image-by-nasa"/> */}
-            <img className = "parties" src = {parties} alt = "Canadian Parties"/>
+      <a href="https://www.peoplespartyofcanada.ca/" target="-blank">
+            <img className = "PPC" src = {PPC} alt = "Peoples Party"/>
       </a>
+
+      <a href="https://www.ndp.ca/" target="-blank">
+            <img className = "NDP" src = {NDP} alt = "NDP Party"/>
+      </a>
+
+      <a href="https://liberal.ca/" target="-blank">
+           <img className = "LIB" src = {LIB} alt = "Liberal Party"/>
+      </a>
+
+      <a href="https://www.greenparty.ca/en" target="-blank">
+            <img className = "GREEN" src = {GREEN} alt = "Green Party"/></a>
+        <a/>
+
+      <a href="https://www.conservative.ca/" target="-blank">
+            <img className = "CONS" src = {CONS} alt = "Conservative Party"/>
+        </a>
+
+      <a href="https://www.blocquebecois.org/" target="-blank">
+            <img className = "BLOC" src = {BLOC} alt = "Bloc Quebecouis"/>
+        </a>
+
+
       {/* <div class="rectangle"></div>
       <img className = "parties2" src = {parties2} alt = "Canadian Parties"/> */}
-
+      <a href = "https://www.canada.ca/home.html" target="-blank">
       <img className = "canadianFlagLeft" src = {canadianFlag} alt = "Canadian Flag"/>
+      </a>
 
       <p className = "text__header">EWB Canadian Party Alignment Quiz</p>
 
