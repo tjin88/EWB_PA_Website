@@ -4,7 +4,7 @@ function ResultsPage() {
     // Write js functions here
     var ans = localStorage.getItem('Ans');
     var toans = ans.substring(1,ans.length-1);
-var Answers = toans.split(',');
+    var Answers = toans.split(',');
 
     //Question Answers to Corresponding Q
     let liberal=0;
@@ -155,8 +155,18 @@ var Answers = toans.split(',');
         <div className="ResultsPage__body">
           <h1 className="Header"> RESULTS </h1>
           <h3 className="subTitle"> Hover over the bar to see which questions led to these results</h3>
-          <p className="rectangleBarGreen"></p>
-          <p className="rectangleBarBloc"></p>
+          <div className='dropdown'>
+            <p className="rectangleBarGreen"> {green} </p>
+            <div className="dropdown-content">
+              <p>Deez Nuts</p>
+            </div>
+          </div>
+          <div className='dropdown'>
+            <p className="rectangleBarBloc"></p>
+            <div className="dropdown-content">
+              <p>Deez Nuts 2.0</p>
+            </div>
+          </div>
           <p className="rectangleBarLiberal"></p>
           <p className="rectangleBarConservative"></p>
           <p className="rectangleBarPPC"></p>
