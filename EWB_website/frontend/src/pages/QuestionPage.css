@@ -24,6 +24,7 @@
   text-align: center;
   margin: auto;
 }
+
 .Questions_text {
   padding: 10%;
   padding-top: 2%;
@@ -38,7 +39,8 @@ ul {
   padding: 0;
   list-style-type: none;
 }
-​ li {
+
+li {
   position: absolute;
   top: 30%;
   text-align: center;

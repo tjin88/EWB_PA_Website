@@ -52,12 +52,11 @@ function HomePage() {
       </a>
 
       <p className = "text__header">EWB Canadian Party Alignment Quiz</p>
-
+      <a href="/QuestionPage">
       <button className = "startButton"> 
-        <a href="/QuestionPage">
             Click here to Start 
-        </a>
       </button>
+      </a>
 
       {/* <form action="./QuestionPage"> */}
       {/* <form action="./test">

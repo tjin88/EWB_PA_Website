@@ -25,6 +25,7 @@ var Questions = ["Canada should invest in greater pipeline infrastructure",
 "Canada’s Covid policies have gone too far, restricting Canadians personal freedoms",]
 var Answers = []
 
+
 function QuestionPage() {
   // Write js functions here
   const [count, setCount] = useState(-1);
@@ -36,6 +37,7 @@ function QuestionPage() {
     console.log("Answers: " + Answers + ", count: " + count);
 
     if (count === (Questions.length - 1)) {
+      localStorage.setItem('Ans',Answers);
         window.location.replace("/ResultsPage");
     }
 
