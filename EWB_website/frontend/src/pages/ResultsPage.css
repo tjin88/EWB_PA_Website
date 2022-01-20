@@ -259,14 +259,31 @@
   position: fixed;
   height: 5vh;
   top: 30%;
-  left: 15%;
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
   border-top: 40px solid;
 }
 .green{
   color:green;
+  left:15%;
 }
 .ndp{
   color:orange;
+  left:36%;
+}
+.liberal{
+  left: 48%;
+  color: #FC5454;
+}
+.conservative{
+  left: 60%;
+  color: #4744ff;
+}
+.bloc{
+  left: 24%;
+  color: beige;
+}
+.ppc{
+  left: 72%;
+  color: #BC54FC;
 }

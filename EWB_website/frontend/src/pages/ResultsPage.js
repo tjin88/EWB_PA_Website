@@ -191,30 +191,36 @@ function ResultsPage() {
             <div className="dropdown-contentgreen">
               <p>{greenAns}</p>
             <div class="arrow-down green"></div>
-              <p>Deez Nuts</p>
             </div>
           </div>
           <div className='dropdown'>
             <p className="rectangleBarBloc">{bloc}</p>
             <div className="dropdown-contentbloc">
+            <div class="arrow-down bloc"></div>
+
             <p>{blocAns}</p>
             </div>
           </div>
           <div className='dropdown'>
             <p className="rectangleBarLiberal"> {liberal} </p>
             <div className="dropdown-contentliberal">
+            <div class="arrow-down liberal"></div>
+
             <p>{liberalAns}</p>
             </div>
           </div>
           <div className='dropdown'>
             <p className="rectangleBarConservative"> {conservative} </p>
             <div className="dropdown-contentconservative">
+            <div class="arrow-down conservative"></div>
             <p>{conservativeAns}</p>
             </div>
           </div>
           <div className='dropdown'>
             <p className="rectangleBarPPC"> {ppc} </p>
             <div className="dropdown-contentppc">
+            <div class="arrow-down ppc"></div>
+
             <p>{ppcAns}</p>
             </div>
           </div>
