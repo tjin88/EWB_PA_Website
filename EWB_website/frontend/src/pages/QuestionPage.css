@@ -13,7 +13,7 @@
 .rectangle {
   position: absolute;
   width: 80%;
-  height: 20vh;
+  height: 10vh;
   top: 5%;
   left: 10%;
 
@@ -23,11 +23,15 @@
   border-radius: 8vh;
   text-align: center;
   margin: auto;
+  padding: 3%;
 }
 
 .Questions_text {
-  padding: 10%;
-  padding-top: 2%;
+  /* padding: 10%;
+  padding-top: 2%; */
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  top: 1000%;
 }
 
 ul {
@@ -38,22 +42,24 @@ ul {
   padding-left: 0;
   padding: 0;
   list-style-type: none;
+  /* left: 35%; */
 }
 
 li {
-  position: absolute;
+  display: block;
+  position: relative;
   top: 30%;
   text-align: center;
-  padding: 0;
+  /* padding: 0; */
 }
 
 .listItem {
   text-align: center;
   position: relative;
-  width: 50vh;
-  height: 5vh;
+  width: 200%;
+  height: 6vh;
   top: 5%;
-  left: 10%;
+  left: -50%;
   margin: 5%;
   margin-left: 0;
 
