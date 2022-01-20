@@ -188,39 +188,41 @@ function ResultsPage() {
           <h3 className="subTitle"> Hover over the bar to see which questions led to these results</h3>
           <div className='dropdown'>
             <p className="rectangleBarGreen">{green}</p>
-            {/* <i class="arrow down"></i> */}
             <div className="dropdown-contentgreen">
+              <p>{greenAns}</p>
+            <div class="arrow-down green"></div>
               <p>Deez Nuts</p>
             </div>
           </div>
           <div className='dropdown'>
             <p className="rectangleBarBloc">{bloc}</p>
             <div className="dropdown-contentbloc">
-              <p>Deez Nuts 2.0</p>
+            <p>{blocAns}</p>
             </div>
           </div>
           <div className='dropdown'>
             <p className="rectangleBarLiberal"> {liberal} </p>
             <div className="dropdown-contentliberal">
-              <p>Deez Nuts</p>
+            <p>{liberalAns}</p>
             </div>
           </div>
           <div className='dropdown'>
             <p className="rectangleBarConservative"> {conservative} </p>
             <div className="dropdown-contentconservative">
-              <p>Deez Nuts</p>
+            <p>{conservativeAns}</p>
             </div>
           </div>
           <div className='dropdown'>
             <p className="rectangleBarPPC"> {ppc} </p>
             <div className="dropdown-contentppc">
-              <p>Deez Nuts</p>
+            <p>{ppcAns}</p>
             </div>
           </div>
           <div className='dropdown'>
             <p className="rectangleBarNDP"> {ndp} </p>
             <div className="dropdown-contentndp">
-              <p>Deez Nuts</p>
+            <div class="arrow-down ndp"></div>
+            <p>{ndpAns}</p>
             </div>
             </div>
         
