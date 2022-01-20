@@ -50,10 +50,12 @@ function QuestionPage() {
       <div className="QuestionPage__body">
           {/* <h1>WORKING??????</h1> */}
           <h1 className="rectangle">
+            <div className="Questions_text">
               {count === -1 
               ? "Click any button to start" 
               : Questions[count]}
               {/* {Answers} */}
+            </div>
           </h1>
           <ul className="list">
               <li> 
