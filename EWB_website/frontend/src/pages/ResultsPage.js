@@ -156,21 +156,43 @@ function ResultsPage() {
           <h1 className="Header"> RESULTS </h1>
           <h3 className="subTitle"> Hover over the bar to see which questions led to these results</h3>
           <div className='dropdown'>
-            <p className="rectangleBarGreen"> {green} </p>
-            <div className="dropdown-content">
+            <p className="rectangleBarGreen">{green}</p>
+            {/* <i class="arrow down"></i> */}
+            <div className="dropdown-contentgreen">
               <p>Deez Nuts</p>
             </div>
           </div>
           <div className='dropdown'>
-            <p className="rectangleBarBloc"></p>
-            <div className="dropdown-content">
+            <p className="rectangleBarBloc">{bloc}</p>
+            <div className="dropdown-contentbloc">
               <p>Deez Nuts 2.0</p>
             </div>
           </div>
-          <p className="rectangleBarLiberal"></p>
-          <p className="rectangleBarConservative"></p>
-          <p className="rectangleBarPPC"></p>
-          <p className="rectangleBarNDP"></p>    
+          <div className='dropdown'>
+            <p className="rectangleBarLiberal"> {liberal} </p>
+            <div className="dropdown-contentliberal">
+              <p>Deez Nuts</p>
+            </div>
+          </div>
+          <div className='dropdown'>
+            <p className="rectangleBarConservative"> {conservative} </p>
+            <div className="dropdown-contentconservative">
+              <p>Deez Nuts</p>
+            </div>
+          </div>
+          <div className='dropdown'>
+            <p className="rectangleBarPPC"> {ppc} </p>
+            <div className="dropdown-contentppc">
+              <p>Deez Nuts</p>
+            </div>
+          </div>
+          <div className='dropdown'>
+            <p className="rectangleBarNDP"> {ndp} </p>
+            <div className="dropdown-contentndp">
+              <p>Deez Nuts</p>
+            </div>
+            </div>
+        
           {/* <p> liberal{liberal}</p>  
           <p> cons{conservative}</p>  
           <p> ndp{ndp}</p>  
