@@ -1,4 +1,5 @@
 import './ResultsPage.css';
+import React from 'react';
 
 function ResultsPage() {
     // Write js functions here
@@ -207,7 +208,6 @@ function ResultsPage() {
     if(Answers[22]==="4"){liberalAns[liberal] = Questions[21]; liberal++; ndpAns[ndp] = Questions[21]; ndp++}
     if(Answers[22]==="5"){ndpAns[ndp] = Questions[21]; ndp++;}
 
-
     function displayAnswers(x){
       let string = '';
 
@@ -239,7 +239,6 @@ function ResultsPage() {
             <div className="dropdown-contentbloc">
             <div class="arrow-down bloc"></div>
             <p>You agree with Bloc Québécois on: </p>
-
             <p>{displayAnswers(blocAns)}</p>
             </div>
           </div>
@@ -248,7 +247,6 @@ function ResultsPage() {
             <div className="dropdown-contentliberal">
             <div class="arrow-down liberal"></div>
             <p>You agree with the Liberal Party on: </p>
-
             <p>{displayAnswers(liberalAns)}</p>
             </div>
           </div>
@@ -264,7 +262,6 @@ function ResultsPage() {
             <p className="rectangleBarPPC"> {ppc} </p>
             <div className="dropdown-contentppc">
             <div class="arrow-down ppc"></div>
-
             <p>You agree with People's Party of Canada on: </p>
             <p>{displayAnswers(ppcAns)}</p>
             </div>
