@@ -47,6 +47,9 @@ function ResultsPage() {
     let unsureAns = [];
 
 
+    /** 
+     * Environment 
+    */
     //1
     if(Answers[1]==="1"){ppcAns[ppc] = Questions[0]; ppc++; }
     if(Answers[1]==="2"){conservativeAns[conservative] = Questions[0]; conservative++;}
@@ -65,6 +68,10 @@ function ResultsPage() {
     if(Answers[3]==="3"){unsureAns[unsure] = Questions[2]; unsure++;}
     if(Answers[3]==="4"){conservativeAns[conservative] = Questions[2]; conservative++;}
     if(Answers[3]==="5"){ppcAns[ppc] = Questions[2]; ppc++;}
+    
+    /** 
+     * Social Programs 
+    */
     //4
     if(Answers[4]==="1"){greenAns[green] = Questions[3]; green++;}
     if(Answers[4]==="2"){ndpAns[ndp] = Questions[3]; ndp++;  blocAns[bloc] = Questions[3]; bloc++;}
@@ -88,31 +95,39 @@ function ResultsPage() {
     if(Answers[7]==="2"){ndpAns[ndp] = Questions[6]; ndp++;}
     if(Answers[7]==="3"){ blocAns[bloc] = Questions[6]; bloc++;}
     if(Answers[7]==="4"){liberalAns[liberal] = Questions[6]; liberal++;}
-    if(Answers[7]==="5"){conservativeAns[conservative] = Questions[6]; conservative++;ppcAns[ppc] = Questions[6]; ppc++;}
+    if(Answers[7]==="5"){conservativeAns[conservative] = Questions[6]; conservative++; ppcAns[ppc] = Questions[6]; ppc++;}
     //8
     if(Answers[8]==="1"){ndpAns[ndp] = Questions[7]; ndp++; greenAns[green] = Questions[7]; green++;}
     if(Answers[8]==="2"){liberalAns[liberal] = Questions[7]; liberal++;  blocAns[bloc] = Questions[7]; bloc++;}
     if(Answers[8]==="3"){unsureAns[unsure] = Questions[7]; unsure++;}
     if(Answers[8]==="4"){conservativeAns[conservative] = Questions[7]; conservative++;}
     if(Answers[8]==="5"){ppcAns[ppc] = Questions[7]; ppc++;}
+
+    /**
+     * Taxes & Economic Policy
+     */
     //9
     if(Answers[9]==="1"){ndpAns[ndp] = Questions[8]; ndp++;}
     if(Answers[9]==="2"){liberalAns[liberal] = Questions[8]; liberal++;}
-    if(Answers[9]==="3"){greenAns[green] = Questions[8]; green++;}
+    if(Answers[9]==="3"){greenAns[green] = Questions[8]; green++; blocAns[bloc] = Questions[8]; bloc++;}
     if(Answers[9]==="4"){conservativeAns[conservative] = Questions[8]; conservative++;}
     if(Answers[9]==="5"){ppcAns[ppc] = Questions[8]; ppc++;}
     //10
-    if(Answers[10]==="1"){ndpAns[ndp] = Questions[9]; ndp++;conservativeAns[conservative] = Questions[9]; conservative++;}
+    if(Answers[10]==="1"){ndpAns[ndp] = Questions[9]; ndp++; conservativeAns[conservative] = Questions[9]; conservative++;}
     if(Answers[10]==="2"){ blocAns[bloc] = Questions[9]; bloc++;}
     if(Answers[10]==="3"){greenAns[green] = Questions[9]; green++;}
     if(Answers[10]==="4"){ppcAns[ppc] = Questions[9]; ppc++;}
     if(Answers[10]==="5"){liberalAns[liberal] = Questions[9]; liberal++;}
     //11
     if(Answers[11]==="1"){ndpAns[ndp] = Questions[10]; ndp++;}
-    if(Answers[11]==="2"){ blocAns[bloc] = Questions[10]; bloc++; greenAns[green] = Questions[10]; green++;}
+    if(Answers[11]==="2"){blocAns[bloc] = Questions[10]; bloc++; greenAns[green] = Questions[10]; green++;}
     if(Answers[11]==="3"){liberalAns[liberal] = Questions[10]; liberal++;}
     if(Answers[11]==="4"){conservativeAns[conservative] = Questions[10]; conservative++;}
     if(Answers[11]==="5"){ppcAns[ppc] = Questions[10]; ppc++;}
+    
+    /**
+     * Foreign Policy
+     */
     //12
     if(Answers[12]==="1"){conservativeAns[conservative] = Questions[11]; conservative++;}
     if(Answers[12]==="2"){ndpAns[ndp] = Questions[11]; ndp++;}
@@ -126,7 +141,7 @@ function ResultsPage() {
     if(Answers[13]==="4"){ blocAns[bloc] = Questions[12]; bloc++;}
     if(Answers[13]==="5"){liberalAns[liberal] = Questions[12]; liberal++;}
     //14
-    if(Answers[14]==="1"){greenAns[green] = Questions[13]; green++;ndpAns[ndp] = Questions[13]; ndp++;}
+    if(Answers[14]==="1"){greenAns[green] = Questions[13]; green++; ndpAns[ndp] = Questions[13]; ndp++;}
     if(Answers[14]==="2"){liberalAns[liberal] = Questions[13]; liberal++;}
     if(Answers[14]==="3"){ blocAns[bloc] = Questions[13]; bloc++;}
     if(Answers[14]==="4"){conservativeAns[conservative] = Questions[13]; conservative++;}
@@ -143,34 +158,46 @@ function ResultsPage() {
     if(Answers[16]==="3"){greenAns[green] = Questions[15]; green++;}
     if(Answers[16]==="4"){conservativeAns[conservative] = Questions[15]; conservative++;}
     if(Answers[16]==="5"){liberalAns[liberal] = Questions[15]; liberal++;}
+    
+    /**
+     * National Security
+     */
     //17
     if(Answers[17]==="1"){ppcAns[ppc] = Questions[16]; ppc++;}
-    if(Answers[17]==="2"){conservativeAns[conservative] = Questions[16]; conservative++;}
-    if(Answers[17]==="3"){liberalAns[liberal] = Questions[16]; liberal++;}
-    if(Answers[17]==="4"){ndpAns[ndp] = Questions[16]; ndp++;  blocAns[bloc] = Questions[16]; bloc++;}
-    if(Answers[17]==="5"){greenAns[green] = Questions[16]; green++;}
+    if(Answers[17]==="2"){conservativeAns[conservative] = Questions[16]; conservative++; blocAns[bloc] = Questions[16]; bloc++;}
+    if(Answers[17]==="3"){greenAns[green] = Questions[16]; green++;}
+    if(Answers[17]==="4"){liberalAns[liberal] = Questions[16]; liberal++;}
+    if(Answers[17]==="5"){ndpAns[ndp] = Questions[16]; ndp++;}
     //18
     if(Answers[18]==="1"){ndpAns[ndp] = Questions[17]; ndp++; greenAns[green] = Questions[17]; green++;}
     if(Answers[18]==="2"){liberalAns[liberal] = Questions[17]; liberal++;}
     if(Answers[18]==="3"){unsureAns[unsure] = Questions[17]; unsure++;}
     if(Answers[18]==="4"){ blocAns[bloc] = Questions[17]; bloc++; conservativeAns[conservative] = Questions[17]; conservative++;}
     if(Answers[18]==="5"){ppcAns[ppc] = Questions[17]; ppc++;}
+
+    /**
+     * Reconciliation 
+     */
     //19
     if(Answers[19]==="1"){unsureAns[unsure] = Questions[18]; unsure++;}
-    if(Answers[19]==="2"){ndpAns[ndp] = Questions[18]; ndp++;greenAns[green] = Questions[18]; green++;}
-    if(Answers[19]==="3"){ blocAns[bloc] = Questions[18]; bloc++;}
+    if(Answers[19]==="2"){ndpAns[ndp] = Questions[18]; ndp++; greenAns[green] = Questions[18]; green++;}
+    if(Answers[19]==="3"){blocAns[bloc] = Questions[18]; bloc++;}
     if(Answers[19]==="4"){liberalAns[liberal] = Questions[18]; liberal++; conservativeAns[conservative] = Questions[18]; conservative++;}
-    if(Answers[19]==="5"){ppcAns[ppc] = Questions[18]; ppc++;}
+    // if(Answers[19]==="5"){ppcAns[ppc] = Questions[18]; ppc++;} *******
     //20
     if(Answers[20]==="1"){ppcAns[ppc] = Questions[19]; ppc++; greenAns[green] = Questions[19]; green++}
     if(Answers[20]==="2"){ndpAns[ndp] = Questions[19]; ndp++;  blocAns[bloc] = Questions[19]; bloc++}
     if(Answers[20]==="3"){unsureAns[unsure] = Questions[19]; unsure++;}
     if(Answers[20]==="4"){conservativeAns[conservative] = Questions[19]; conservative++;}
     if(Answers[20]==="5"){liberalAns[liberal] = Questions[19]; liberal++;}
+    
+    /**
+     * COVID-19
+     */
     //21
     if(Answers[21]==="1"){ndpAns[ndp] = Questions[20]; ndp++;}
     if(Answers[21]==="2"){liberalAns[liberal] = Questions[20]; liberal++;}
-    if(Answers[21]==="3"){ blocAns[bloc] = Questions[20]; bloc++; greenAns[green] = Questions[20]; green++}
+    if(Answers[21]==="3"){blocAns[bloc] = Questions[20]; bloc++; greenAns[green] = Questions[20]; green++}
     if(Answers[21]==="4"){conservativeAns[conservative] = Questions[20]; conservative++;}
     if(Answers[21]==="5"){ppcAns[ppc] = Questions[20]; ppc++;}
     //22
@@ -190,7 +217,8 @@ function ResultsPage() {
             <p className="rectangleBarGreen">{green}</p>
             <div className="dropdown-contentgreen">
               <p>{greenAns}</p>
-            <div class="arrow-down green"></div>
+              <p id = "greenParty"></p>
+              <div class="arrow-down green"></div>
             </div>
           </div>
           <div className='dropdown'>
