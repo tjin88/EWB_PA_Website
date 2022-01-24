@@ -1,4 +1,5 @@
 import './ResultsPage.css';
+import React from 'react';
 
 function ResultsPage() {
     // Write js functions here
@@ -207,6 +208,20 @@ function ResultsPage() {
     if(Answers[22]==="4"){liberalAns[liberal] = Questions[21]; liberal++; ndpAns[ndp] = Questions[21]; ndp++}
     if(Answers[22]==="5"){ndpAns[ndp] = Questions[21]; ndp++;}
 
+    function displayAnswrs(x) {
+      let bingbong = "";
+
+      for (let i = 0; i < x.length; i++)
+      {
+        bingbong += x[i] + "\n";
+      }
+
+      const bingbang = bingbong.split('\n').map(str => <p>{str}</p>);
+      return bingbang;
+      console.log(bingbong)
+    }
+
+
     // The return statement will mainly comprise of HTML
     return (
       <div className="ResultsPage">
@@ -216,7 +231,7 @@ function ResultsPage() {
           <div className='dropdown'>
             <p className="rectangleBarGreen">{green}</p>
             <div className="dropdown-contentgreen">
-              <p>{greenAns}</p>
+              <p id="pp-wrap">{displayAnswrs(greenAns)}</p>
               <p id = "greenParty"></p>
               <div class="arrow-down green"></div>
             </div>
@@ -225,8 +240,7 @@ function ResultsPage() {
             <p className="rectangleBarBloc">{bloc}</p>
             <div className="dropdown-contentbloc">
             <div class="arrow-down bloc"></div>
-
-            <p>{blocAns}</p>
+            <textarea>{displayAnswrs(blocAns)}</textarea>
             </div>
           </div>
           <div className='dropdown'>
@@ -234,14 +248,14 @@ function ResultsPage() {
             <div className="dropdown-contentliberal">
             <div class="arrow-down liberal"></div>
 
-            <p>{liberalAns}</p>
+            <text>{displayAnswrs(liberalAns)}</text>
             </div>
           </div>
           <div className='dropdown'>
             <p className="rectangleBarConservative"> {conservative} </p>
             <div className="dropdown-contentconservative">
             <div class="arrow-down conservative"></div>
-            <p>{conservativeAns}</p>
+            <p>{displayAnswrs(conservativeAns)}</p>
             </div>
           </div>
           <div className='dropdown'>
@@ -249,14 +263,14 @@ function ResultsPage() {
             <div className="dropdown-contentppc">
             <div class="arrow-down ppc"></div>
 
-            <p>{ppcAns}</p>
+            <p>{displayAnswrs(pcAns)}</p>
             </div>
           </div>
           <div className='dropdown'>
             <p className="rectangleBarNDP"> {ndp} </p>
             <div className="dropdown-contentndp">
             <div class="arrow-down ndp"></div>
-            <p>{ndpAns}</p>
+            <p>{displayAnswrs(ndpAns)}</p>
             </div>
             </div>
         
