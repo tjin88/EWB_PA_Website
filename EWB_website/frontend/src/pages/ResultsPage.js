@@ -1,3 +1,4 @@
+import React from 'react';
 import './ResultsPage.css';
 import React from 'react';
 
@@ -232,6 +233,7 @@ function ResultsPage() {
               <p>{displayAnswers(greenAns)}</p>
               <p id = "greenParty"></p>
               <div class="arrow-down green"></div>
+              <p id="pp-wrap">{displayAnswers(greenAns)}</p>
             </div>
           </div>
           <div className='dropdown'>
@@ -274,14 +276,6 @@ function ResultsPage() {
             <p>{displayAnswers(ndpAns)}</p>
             </div>
             </div>
-        
-          {/* <p> liberal{liberal}</p>  
-          <p> cons{conservative}</p>  
-          <p> ndp{ndp}</p>  
-          <p> bloc{bloc}</p>  
-          <p> green{green}</p>  
-          <p> ppc{ppc}</p>
-          <p> unsure{unsure}</p> */}
         </div>
       </div>
     );
