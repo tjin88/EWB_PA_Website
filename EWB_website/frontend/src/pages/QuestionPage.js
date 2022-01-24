@@ -50,6 +50,7 @@ function QuestionPage() {
       <div className="QuestionPage__body">
           {/* <h1>WORKING??????</h1> */}
           <h1 className="rectangle">
+            <p>{count !== -1 ? "Question: " + (count+1) : null}</p>
             <p className="Questions_text">
               {count === -1 
               ? "Click any button to start" 
