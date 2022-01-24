@@ -208,19 +208,16 @@ function ResultsPage() {
     if(Answers[22]==="4"){liberalAns[liberal] = Questions[21]; liberal++; ndpAns[ndp] = Questions[21]; ndp++}
     if(Answers[22]==="5"){ndpAns[ndp] = Questions[21]; ndp++;}
 
-    function displayAnswrs(x) {
-      let bingbong = "";
+    function displayAnswers(x){
+      let string = '';
 
-      for (let i = 0; i < x.length; i++)
-      {
-        bingbong += x[i] + "\n";
+      for (let i = 0; i < x.length; i++){
+        string += x[i] + "\n";
+        
       }
-
-      const bingbang = bingbong.split('\n').map(str => <p>{str}</p>);
-      return bingbang;
-      console.log(bingbong)
-    }
-
+      const liststring = string.split('\n').map(str => <p>{str}</p>);
+      return liststring;
+    } 
 
     // The return statement will mainly comprise of HTML
     return (
@@ -231,7 +228,8 @@ function ResultsPage() {
           <div className='dropdown'>
             <p className="rectangleBarGreen">{green}</p>
             <div className="dropdown-contentgreen">
-              <p id="pp-wrap">{displayAnswrs(greenAns)}</p>
+            <p>You agree with the Green Party on: </p>
+              <p>{displayAnswers(greenAns)}</p>
               <p id = "greenParty"></p>
               <div class="arrow-down green"></div>
             </div>
@@ -240,37 +238,40 @@ function ResultsPage() {
             <p className="rectangleBarBloc">{bloc}</p>
             <div className="dropdown-contentbloc">
             <div class="arrow-down bloc"></div>
-            <textarea>{displayAnswrs(blocAns)}</textarea>
+            <p>You agree with Bloc Québécois on: </p>
+            <p>{displayAnswers(blocAns)}</p>
             </div>
           </div>
           <div className='dropdown'>
             <p className="rectangleBarLiberal"> {liberal} </p>
             <div className="dropdown-contentliberal">
             <div class="arrow-down liberal"></div>
-
-            <text>{displayAnswrs(liberalAns)}</text>
+            <p>You agree with the Liberal Party on: </p>
+            <p>{displayAnswers(liberalAns)}</p>
             </div>
           </div>
           <div className='dropdown'>
             <p className="rectangleBarConservative"> {conservative} </p>
             <div className="dropdown-contentconservative">
             <div class="arrow-down conservative"></div>
-            <p>{displayAnswrs(conservativeAns)}</p>
+            <p>You agree with the Conservative Party on: </p>
+            <p>{displayAnswers(conservativeAns)}</p>
             </div>
           </div>
           <div className='dropdown'>
             <p className="rectangleBarPPC"> {ppc} </p>
             <div className="dropdown-contentppc">
             <div class="arrow-down ppc"></div>
-
-            <p>{displayAnswrs(pcAns)}</p>
+            <p>You agree with People's Party of Canada on: </p>
+            <p>{displayAnswers(ppcAns)}</p>
             </div>
           </div>
           <div className='dropdown'>
             <p className="rectangleBarNDP"> {ndp} </p>
             <div className="dropdown-contentndp">
             <div class="arrow-down ndp"></div>
-            <p>{displayAnswrs(ndpAns)}</p>
+            <p>You agree with the New Democratic Party on: </p>
+            <p>{displayAnswers(ndpAns)}</p>
             </div>
             </div>
         
@@ -287,3 +288,6 @@ function ResultsPage() {
   }
 
 export default ResultsPage;
+
+//scroll bar on results page answers display
+//make arrow bigger
