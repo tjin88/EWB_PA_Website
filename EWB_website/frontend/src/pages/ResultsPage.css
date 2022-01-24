@@ -287,3 +287,7 @@
   left: 72%;
   color: #BC54FC;
 }
+
+.pp-wrap{
+  white-space: pre-line;
+}
