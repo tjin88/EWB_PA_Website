@@ -209,7 +209,7 @@ function ResultsPage() {
     if(Answers[22]==="5"){ndpAns[ndp] = Questions[21]; ndp++;}
 
     function displayAnswers(x){
-      let string = '';
+      let string = "";
 
       for (let i = 0; i < x.length; i++){
         string += x[i] + "\n";
@@ -228,8 +228,15 @@ function ResultsPage() {
           <div className='dropdown'>
             <p className="rectangleBarGreen">{green}</p>
             <div className="dropdown-contentgreen">
-              <p className = "whiteText">You agree with the Green Party on: </p>
-              <p className = "whiteText">{displayAnswers(greenAns)}</p>
+              {greenAns.length === 0 
+                ? <p className = "whiteText biggerText">It appears you did not agree with the Green Party on any of our posed questions</p>
+                : (
+                  <div>
+                    <p className = "whiteText biggerText">Of our posed questions, you agreed with the Green Party on: </p>
+                    <p className = "whiteText">{displayAnswers(greenAns)}</p>
+                  </div>
+                  )
+              }
               <div class="arrow-down green"></div>
             </div>
           </div>
@@ -237,40 +244,75 @@ function ResultsPage() {
             <p className="rectangleBarBloc">{bloc}</p>
             <div className="dropdown-contentbloc">
             <div class="arrow-down bloc"></div>
-            <p>You agree with Bloc Québécois on: </p>
-            <p>{displayAnswers(blocAns)}</p>
+            {blocAns.length === 0 
+                ? <p className = "biggerText">It appears you did not agree with the Bloc Québécois on any of our posed questions</p>
+                : (
+                  <div>
+                    <p className = "biggerText">Of our posed questions, you agreed with Bloc Québécois on: </p>
+                    <p>{displayAnswers(blocAns)}</p>
+                  </div>
+                  )
+              }
             </div>
           </div>
           <div className='dropdown'>
             <p className="rectangleBarLiberal"> {liberal} </p>
             <div className="dropdown-contentliberal">
             <div class="arrow-down liberal"></div>
-            <p>You agree with the Liberal Party on: </p>
-            <p>{displayAnswers(liberalAns)}</p>
+            {liberalAns.length === 0 
+                ? <p className = "biggerText">It appears you did not agree with the Liberal Party on any of our posed questions</p>
+                : (
+                  <div>
+                    <p className = "biggerText">Of our posed questions, you agreed with the Liberal Party on: </p>
+                    <p>{displayAnswers(liberalAns)}</p>
+                  </div>
+                  )
+              }
             </div>
           </div>
           <div className='dropdown'>
             <p className="rectangleBarConservative"> {conservative} </p>
             <div className="dropdown-contentconservative">
             <div class="arrow-down conservative"></div>
-            <p className = "whiteText">You agree with the Conservative Party on: </p>
-            <p className = "whiteText">{displayAnswers(conservativeAns)}</p>
+            {conservativeAns.length === 0 
+                ? <p className = "whiteText biggerText">It appears you did not agree with the Conservative Party on any of our posed questions</p>
+                : (
+                  <div>
+                    <p className = "whiteText biggerText">Of our posed questions, you agreed with the Conservative Party on: </p>
+                    <p className = "whiteText">{displayAnswers(conservativeAns)}</p>
+                  </div>
+                  )
+              }
             </div>
           </div>
           <div className='dropdown'>
             <p className="rectangleBarPPC"> {ppc} </p>
             <div className="dropdown-contentppc">
             <div class="arrow-down ppc"></div>
-            <p className = "whiteText">You agree with People's Party of Canada on: </p>
-            <p className = "whiteText">{displayAnswers(ppcAns)}</p>
+            {ppcAns.length === 0 
+                ? <p className = "whiteText biggerText">It appears you did not agree with the People's Party of Canada on any of our posed questions</p>
+                : (
+                  <div>
+                    <p className = "whiteText biggerText">Of our posed questions, you agreed with the People's Party of Canada on: </p>
+                    <p className = "whiteText">{displayAnswers(ppcAns)}</p>
+                  </div>
+                  )
+              }
             </div>
           </div>
           <div className='dropdown'>
             <p className="rectangleBarNDP"> {ndp} </p>
             <div className="dropdown-contentndp">
             <div class="arrow-down ndp"></div>
-            <p>You agree with the New Democratic Party on: </p>
-            <p>{displayAnswers(ndpAns)}</p>
+            {ndpAns.length === 0 
+                ? <p className = "biggerText">It appears you did not agree with the New Democratic Party on any of our posed questions</p>
+                : (
+                  <div>
+                    <p className = "biggerText">Of our posed questions, you agreed with the New Democratic Party on: </p>
+                    <p>{displayAnswers(ndpAns)}</p>
+                  </div>
+                  )
+              }
             </div>
             </div>
         </div>

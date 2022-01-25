@@ -272,6 +272,6 @@
   color: #BC54FC;
 }
 
-.pp-wrap{
-  white-space: pre-line;
+.biggerText {
+  font-size: large;
 }
