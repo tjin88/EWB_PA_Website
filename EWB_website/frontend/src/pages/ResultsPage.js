@@ -280,5 +280,5 @@ function ResultsPage() {
 
 export default ResultsPage;
 
-//scroll bar on results page answers display
+//scroll bar on results page answers display --> Currently can only accomodate 10 questions in the dropdown box
 //make arrow bigger

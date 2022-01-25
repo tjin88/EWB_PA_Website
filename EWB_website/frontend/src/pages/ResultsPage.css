@@ -129,7 +129,7 @@
 .dropdown-contentgreen {
   display: none;position: fixed;
   width: 75%;
-  height: 45vh;
+  height: 55vh;
   top: 40%;
   left: 12%;
   background-color: green;
@@ -143,7 +143,7 @@
 .dropdown-contentbloc {
   display: none;position: fixed;
   width: 75%;
-  height: 45vh;
+  height: 55vh;
   top: 40%;
   left: 12%;
   background-color: beige;
@@ -157,7 +157,7 @@
 .dropdown-contentliberal {
   display: none;position: fixed;
   width: 75%;
-  height: 45vh;
+  height: 55vh;
   top: 40%;
   left: 12%;
   background-color: #FC5454;
@@ -171,7 +171,7 @@
 .dropdown-contentconservative {
   display: none;position: fixed;
   width: 75%;
-  height: 45vh;
+  height: 55vh;
   top: 40%;
   left: 12%;
   background-color: #4744ff;
@@ -188,7 +188,7 @@
 .dropdown-contentndp {
   display: none;position: fixed;
   width: 75%;
-  height: 45vh;
+  height: 55vh;
   top: 40%;
   left: 12%;
   background-color: orange;
@@ -202,7 +202,7 @@
 .dropdown-contentppc {
   display: none;position: fixed;
   width: 75%;
-  height: 45vh;
+  height: 55vh;
   top: 40%;
   left: 12%;
   background-color: #BC54FC;
