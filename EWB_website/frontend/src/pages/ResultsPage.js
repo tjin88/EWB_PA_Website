@@ -1,6 +1,5 @@
 import React from 'react';
 import './ResultsPage.css';
-import React from 'react';
 
 function ResultsPage() {
     // Write js functions here
@@ -229,11 +228,9 @@ function ResultsPage() {
           <div className='dropdown'>
             <p className="rectangleBarGreen">{green}</p>
             <div className="dropdown-contentgreen">
-            <p>You agree with the Green Party on: </p>
-              <p>{displayAnswers(greenAns)}</p>
-              <p id = "greenParty"></p>
+              <p className = "whiteText">You agree with the Green Party on: </p>
+              <p className = "whiteText">{displayAnswers(greenAns)}</p>
               <div class="arrow-down green"></div>
-              <p id="pp-wrap">{displayAnswers(greenAns)}</p>
             </div>
           </div>
           <div className='dropdown'>
@@ -256,16 +253,16 @@ function ResultsPage() {
             <p className="rectangleBarConservative"> {conservative} </p>
             <div className="dropdown-contentconservative">
             <div class="arrow-down conservative"></div>
-            <p>You agree with the Conservative Party on: </p>
-            <p>{displayAnswers(conservativeAns)}</p>
+            <p className = "whiteText">You agree with the Conservative Party on: </p>
+            <p className = "whiteText">{displayAnswers(conservativeAns)}</p>
             </div>
           </div>
           <div className='dropdown'>
             <p className="rectangleBarPPC"> {ppc} </p>
             <div className="dropdown-contentppc">
             <div class="arrow-down ppc"></div>
-            <p>You agree with People's Party of Canada on: </p>
-            <p>{displayAnswers(ppcAns)}</p>
+            <p className = "whiteText">You agree with People's Party of Canada on: </p>
+            <p className = "whiteText">{displayAnswers(ppcAns)}</p>
             </div>
           </div>
           <div className='dropdown'>

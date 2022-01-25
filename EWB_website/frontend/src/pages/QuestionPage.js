@@ -22,7 +22,7 @@ var Questions = ["Canada should invest in greater pipeline infrastructure",
 "Canada needs to invest more money into indigenous communities/reserves",
 "Canada should allow Indigenous peoples to have their own system of government.",
 "Canada should be doing more to distribute COVID-19 vaccinations to poorer nations",
-"Canada’s Covid policies have gone too far, restricting Canadians personal freedoms",]
+"Canada’s Covid policies have gone too far, restricting Canadians' personal freedoms",]
 var Answers = []
 
 
@@ -50,7 +50,7 @@ function QuestionPage() {
       <div className="QuestionPage__body">
           {/* <h1>WORKING??????</h1> */}
           <h1 className="rectangle">
-            <p>{count !== -1 ? "Question: " + (count+1) : null}</p>
+            <p className = "Questions_number">{((count !== -1) && (count < 22)) ? "Question: " + (count+1) : null}</p>
             <p className="Questions_text">
               {count === -1 
               ? "Click any button to start" 

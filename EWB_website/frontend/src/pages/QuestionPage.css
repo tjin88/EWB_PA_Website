@@ -27,11 +27,12 @@
 }
 
 .Questions_text {
-  /* padding: 10%;
-  padding-top: 2%; */
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  /* top: 1000%; */
+}
+.Questions_number {
+  -ms-transform: translateY(-60%);
+  transform: translateY(-60%);
 }
 
 ul {

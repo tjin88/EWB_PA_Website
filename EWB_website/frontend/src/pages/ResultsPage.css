@@ -18,13 +18,13 @@
 
 .subTitle {
   position: relative;
-  top: 10%;
+  top: 13%;
   color: white;
 }
 
 .rectangleBarGreen {
   position: fixed;
-  width: 20%;
+  width: 15%;
   height: 5vh;
   top: 30%;
   left: 12%;
@@ -39,7 +39,7 @@
 }
 .rectangleBarBloc {
   position: fixed;
-  width: 20%;
+  width: 15%;
   height: 5vh;
   top: 30%;
   left: 24%;
@@ -54,7 +54,7 @@
 }
 .rectangleBarNDP {
   position: fixed;
-  width: 20%;
+  width: 15%;
   height: 5vh;
   top: 30%;
   left: 36%;
@@ -69,7 +69,7 @@
 }
 .rectangleBarLiberal {
   position: fixed;
-  width: 20%;
+  width: 15%;
   height: 5vh;
   top: 30%;
   left: 48%;
@@ -84,7 +84,7 @@
 }
 .rectangleBarConservative {
   position: fixed;
-  width: 20%;
+  width: 15%;
   height: 5vh;
   top: 30%;
   left: 60%;
@@ -181,6 +181,9 @@
   border-radius: 8vh;
   text-align: center;
   margin: auto;
+}
+.whiteText {
+  color: white;
 }
 .dropdown-contentndp {
   display: none;position: fixed;
