@@ -39,7 +39,7 @@ function QuestionPage() {
 
     if (count === (Questions.length - 1)) {
       localStorage.setItem('Ans',Answers);
-        window.location.replace("/RitaPage");
+        window.location.replace("/ResultsPage");
     }
 
   }, [option, count]);
