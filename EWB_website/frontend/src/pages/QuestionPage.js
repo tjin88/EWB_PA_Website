@@ -32,14 +32,14 @@ function QuestionPage() {
   const [count, setCount] = useState(-1);
   const [option, setOption] = useState(-1);
 
-  useEffect(() => () => {
+  useEffect(() => {
     // document.title = `You clicked ${count} times`;
     Answers[count] = option;
     console.log("Answers: " + Answers + ", count: " + count);
 
     if (count === (Questions.length - 1)) {
       localStorage.setItem('Ans',Answers);
-        window.location.replace("/RitaPage");
+        window.location.replace("/ResultsPage");
     }
 
   }, [option, count]);
@@ -50,13 +50,16 @@ function QuestionPage() {
     <div className="QuestionPage">
       <div className="QuestionPage__body">
           <h1 className="rectangle">
-            <p className = "Questions_number">{((count !== -1) && (count < 22)) ? "Question: " + (count+1) : null}</p>
-            <p className="Questions_text">
+            <p className = "Questions__number">{((count !== -1) && (count < 22)) ? "Question: " + (count+1) : null}</p>
+            <p className="Questions__text">
               {count === -1 
               ? "Click any button to start" 
               : Questions[count]}
             </p>
           </h1>
+          <button className = "backButton" onClick = {() => {Answers[count] = null; setCount(count - 1)}}>
+            back
+          </button>
           <ul className="list">
               <li> 
                 <button onClick={() => {setOption(1); setCount(count + 1);}} className="listItem">Option 1: Strongly Agree</button>

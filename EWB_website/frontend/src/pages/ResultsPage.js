@@ -233,23 +233,23 @@ function ResultsPage() {
                 : (
                   <div>
                     <p className = "whiteText biggerText">Of our posed questions, you agreed with the Green Party on: </p>
-                    <p className = "whiteText">{displayAnswers(greenAns)}</p>
+                    <p className = "whiteText scrollbar">{displayAnswers(greenAns)}</p>
                   </div>
                   )
               }
-              <div class="arrow-down green"></div>
+              <div className="arrow-down green"></div>
             </div>
           </div>
           <div className='dropdown'>
             <p className="rectangleBarBloc">{bloc}</p>
             <div className="dropdown-contentbloc">
-            <div class="arrow-down bloc"></div>
+            <div className="arrow-down bloc"></div>
             {blocAns.length === 0 
                 ? <p className = "biggerText">It appears you did not agree with the Bloc Québécois on any of our posed questions</p>
                 : (
                   <div>
                     <p className = "biggerText">Of our posed questions, you agreed with Bloc Québécois on: </p>
-                    <p>{displayAnswers(blocAns)}</p>
+                    <p className = "scrollbar">{displayAnswers(blocAns)}</p>
                   </div>
                   )
               }
@@ -258,13 +258,13 @@ function ResultsPage() {
           <div className='dropdown'>
             <p className="rectangleBarLiberal"> {liberal} </p>
             <div className="dropdown-contentliberal">
-            <div class="arrow-down liberal"></div>
+            <div className="arrow-down liberal"></div>
             {liberalAns.length === 0 
                 ? <p className = "biggerText">It appears you did not agree with the Liberal Party on any of our posed questions</p>
                 : (
                   <div>
                     <p className = "biggerText">Of our posed questions, you agreed with the Liberal Party on: </p>
-                    <p>{displayAnswers(liberalAns)}</p>
+                    <p className = "scrollbar">{displayAnswers(liberalAns)}</p>
                   </div>
                   )
               }
@@ -273,13 +273,13 @@ function ResultsPage() {
           <div className='dropdown'>
             <p className="rectangleBarConservative"> {conservative} </p>
             <div className="dropdown-contentconservative">
-            <div class="arrow-down conservative"></div>
+            <div className="arrow-down conservative"></div>
             {conservativeAns.length === 0 
                 ? <p className = "whiteText biggerText">It appears you did not agree with the Conservative Party on any of our posed questions</p>
                 : (
                   <div>
                     <p className = "whiteText biggerText">Of our posed questions, you agreed with the Conservative Party on: </p>
-                    <p className = "whiteText">{displayAnswers(conservativeAns)}</p>
+                    <p className = "whiteText scrollbar">{displayAnswers(conservativeAns)}</p>
                   </div>
                   )
               }
@@ -288,13 +288,13 @@ function ResultsPage() {
           <div className='dropdown'>
             <p className="rectangleBarPPC"> {ppc} </p>
             <div className="dropdown-contentppc">
-            <div class="arrow-down ppc"></div>
+            <div className="arrow-down ppc"></div>
             {ppcAns.length === 0 
                 ? <p className = "whiteText biggerText">It appears you did not agree with the People's Party of Canada on any of our posed questions</p>
                 : (
                   <div>
                     <p className = "whiteText biggerText">Of our posed questions, you agreed with the People's Party of Canada on: </p>
-                    <p className = "whiteText">{displayAnswers(ppcAns)}</p>
+                    <p className = "whiteText scrollbar">{displayAnswers(ppcAns)}</p>
                   </div>
                   )
               }
@@ -303,13 +303,13 @@ function ResultsPage() {
           <div className='dropdown'>
             <p className="rectangleBarNDP"> {ndp} </p>
             <div className="dropdown-contentndp">
-            <div class="arrow-down ndp"></div>
+            <div className="arrow-down ndp"></div>
             {ndpAns.length === 0 
                 ? <p className = "biggerText">It appears you did not agree with the New Democratic Party on any of our posed questions</p>
                 : (
                   <div>
                     <p className = "biggerText">Of our posed questions, you agreed with the New Democratic Party on: </p>
-                    <p>{displayAnswers(ndpAns)}</p>
+                    <p className = "scrollbar">{displayAnswers(ndpAns)}</p>
                   </div>
                   )
               }

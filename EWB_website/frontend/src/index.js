@@ -18,7 +18,6 @@ ReactDOM.render(
       <Route path="/QuestionPage" element={<QuestionPage />} />
       <Route path="/test" element={<Test />} />
       <Route path="/ResultsPage" element={<ResultsPage />} />
-      
     </Routes>
     {/* <Footer /> */}
   </Router>,
