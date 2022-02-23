@@ -7,3 +7,7 @@ To run any local tests:
 - yarn install (installs yarn.lock items)
 - yarn add react-router-dom     ** This is to ensure you can access multiple pages instead of just one
 - yarn start (will open as localhost)
+
+To deploy to firebase:
+- yarn build
+- firebase deploy
