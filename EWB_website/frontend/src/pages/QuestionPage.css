@@ -13,9 +13,9 @@
 .rectangle {
   position: absolute;
   width: 80%;
-  height: 10vh;
+  height: 8%;
   top: 5%;
-  left: 10%;
+  left: 7%;
 
   background: white;
   border: 5px solid white;
@@ -26,13 +26,15 @@
   padding: 0% 3% 6% 3%;
 }
 
-.Questions_text {
+.Questions__text {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  font-size: 2vw;
 }
-.Questions_number {
+.Questions__number {
   -ms-transform: translateY(-60%);
   transform: translateY(-60%);
+  font-size: 2vw;
 }
 
 ul {
@@ -44,6 +46,14 @@ ul {
   padding: 0;
   list-style-type: none;
   /* left: 35%; */
+}
+
+.backButton {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 5vw;
+  height: 5vh;
 }
 
 li {
